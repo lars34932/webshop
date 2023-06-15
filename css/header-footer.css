@@ -13,11 +13,20 @@
     --cb-white: #fff;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
 /* header */
 
 header {
     height: 12.5vh;
-    width: 100%;
+    width: 100vw;
     background: var(--cb-blue);
     display: flex;
     align-items: center;
@@ -31,7 +40,7 @@ header {
     height: 150%;
 }
 
-.logo__link{
+.logo__link {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -44,6 +53,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     gap: 4rem;
+    padding-right: 1rem;
 }
 
 .header__link {
@@ -52,24 +62,24 @@ header {
     text-decoration: none;
 }
 
-.shoppingcart__div{
+.shoppingcart__div {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.shoppingcart__link{
+.shoppingcart__link {
     height: 100%;
     width: 100%;
 }
 
-.shoppingcart__icon{
+.shoppingcart__icon {
     font-size: 4rem;
     color: white;
 }
 
-.shoppingcart__amount{
+.shoppingcart__amount {
     background: var(--cb-orange);
     color: white;
     border-radius: 50%;
@@ -86,7 +96,7 @@ header {
 
 /* footer */
 
-footer{
+footer {
     margin-top: 2%;
     width: 100%;
     border-top: solid 1px var(--cb-gray);
@@ -94,12 +104,12 @@ footer{
     background: var(--cb-blue);
 }
 
-.footer__section{
+.footer__section {
     width: 100%;
     padding: 0 11%;
 }
 
-.footer__section1{
+.footer__section1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -107,71 +117,70 @@ footer{
     height: 5rem;
 }
 
-.footer__section1 > div{
+.footer__section1>div {
     width: 50%;
     display: flex;
     align-items: center;
 }
 
-.footer__section1__div1{
+.footer__section1__div1 {
     font-weight: 700;
     font-size: 2rem;
 }
 
-.footer__section1__div1 i{
+.footer__section1__div1 i {
     color: var(--cb-blue);
 }
 
-.footer__section1__div2{
+.footer__section1__div2 {
     justify-content: flex-end;
 }
 
-.footer__section1__div2 span{
+.footer__section1__div2 span {
     color: var(--cb-orange);
 }
 
-.footer__section1__div2 i{
+.footer__section1__div2 i {
     color: var(--cb-green);
 }
 
-.footer__section2{
+.footer__section2 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     color: white;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    flex-wrap: wrap;
     height: 30rem;
 }
 
-.footer__section2__image{
+.footer__section2__image {
     height: 100%;
     margin-right: 5%;
 }
 
-.footer__section2__div1{
+.footer__section2__div1 {
     margin-right: 5%;
     height: 70%;
     margin-top: 5%;
 }
 
-.footer__section2__div2{
+.footer__section2__div2 {
     height: 70%;
     margin-top: 5%;
 }
 
-.footer__section2__div2 > p{
+.footer__section2__div2>p {
     width: 80%;
 }
 
-.footer__form{
+.footer__form {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.footer__form__email{
+.footer__form__email {
     border: 1px solid var(--cb-gray);
     width: 80%;
     height: 4rem;
@@ -179,7 +188,7 @@ footer{
     border-radius: 0.5rem;
 }
 
-.footer__form__button{
+.footer__form__button {
     width: 10rem;
     height: 4.5rem;
     background: var(--cb-dark-blue);
@@ -193,25 +202,25 @@ footer{
     font-weight: 600;
 }
 
-.footer__form__button:hover{
+.footer__form__button:hover {
     background: var(--cb-darker-blue);
     box-shadow: inset 0 -2px 0 0 var(--cb-darkest-blue);
     cursor: pointer;
 }
 
-.footer__section3{
+.footer__section3 {
     padding: 2% 0;
     background: var(--cb-blue);
 
 }
 
-.footer__ul{
+.footer__ul {
     display: flex;
     justify-content: space-evenly;
     color: white;
 }
 
-.footer__list{
+.footer__list {
     color: white;
     list-style: none;
     display: flex;
@@ -220,12 +229,32 @@ footer{
     gap: 1rem;
 }
 
-.footer__list__link{
+.footer__list__link {
     text-decoration: none;
     color: white;
     width: auto;
 }
 
-.footer__list__link:hover{
+.footer__list__link:hover {
     text-decoration-line: underline;
+}
+
+@media screen and (max-width: 57rem) {
+    .footer__section1 {
+        height: auto;
+    }
+    .header__section{
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 82rem) {
+    .footer__section2 {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
 }

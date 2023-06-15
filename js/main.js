@@ -12,7 +12,7 @@ for (let i = 0; i < arrowButtons.length; i++) {
             reviews[3].style.display = "flex";
             reviews[4].style.display = "flex";
             reviews[5].style.display = "flex";
-            modus = "four-five-six"
+            modus = "four-five-six";
         }
         else{
             reviews[0].style.display = "flex";
@@ -21,7 +21,7 @@ for (let i = 0; i < arrowButtons.length; i++) {
             reviews[3].style.display = "none";
             reviews[4].style.display = "none";
             reviews[5].style.display = "none";
-            modus = "one-two-three"
+            modus = "one-two-three";
         }
     }
 }

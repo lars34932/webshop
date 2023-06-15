@@ -33,14 +33,13 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    width: 100vw;
 }
 
 main {
     width: 100%;
     height: 100%;
-    padding-left: 11%;
-    padding-right: 11%;
-    padding-top: 11%;
+    padding: 11% 11% 0 11%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,11 +77,6 @@ main {
     margin-left: 0.2rem;
 }
 
-.sale__button_div {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .sale__size__button {
     width: 6rem;
     height: 4rem;
@@ -102,6 +96,7 @@ main {
     align-items: center;
     display: flex;
     gap: 0.25rem;
+    flex-wrap: wrap;
 }
 
 .sale__button {
@@ -163,11 +158,19 @@ main {
     color: white;
     margin-top: 1rem;
     margin-left: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .sale__shopping__button:hover {
     background: var(--cb-dark-green);
     box-shadow: inset 0 -2px 0 0 var(--cb-darker-green);
+}
+
+.sale__shopping__button>.shopping__button__check{
+    display: none;
 }
 
 .description__section {
@@ -180,4 +183,19 @@ main {
 
 .description__text {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 57rem){
+    .header__section{
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    main{
+        padding: 21% 11% 0 11%;
+    }
+    .sale__shopping__button{
+        width: 100%;
+    }
 }
