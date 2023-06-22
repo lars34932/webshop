@@ -4,12 +4,17 @@
 
 .prijs__filter__option:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .prijs__filter{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    border: solid 1px black;
+    margin-top: 2rem;
+    font-size: 3.1rem;
+    width: 20rem;
 }
 
 .prijs__filter:hover {
@@ -18,4 +23,14 @@
 
 #down{
     display: none;
+}
+
+@media screen and (max-width: 77.5rem) {
+    .prijs__filter{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .filter__section > div{
+        padding-left: 0rem;
+    }
 }

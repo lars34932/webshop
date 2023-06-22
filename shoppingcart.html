@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="icon" href="/img/logo.webp">
-    <link rel="stylesheet" href="css/product-pagina.css">
+    <link rel="stylesheet" href="css/shoppingcart.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <script src="https://kit.fontawesome.com/6c294d23a1.js" crossorigin="anonymous"></script>
     <script src="js/header.js" defer></script>
-    <script src="js/product-j4.js" defer></script>
-    <title>Jordan 4</title>
+    <title>Shoppingcart</title>
 </head>
 
 <body>
@@ -29,77 +28,50 @@
             <div class="shoppingcart__div">
                 <a class="shoppingcart__link" href="/shoppingcart.html">
                     <i class="fa-solid fa-cart-shopping shoppingcart__icon"></i>
-                    <p id="js--shoppingcart__amount" class="shoppingcart__amount">0</p>
+                    <p class="shoppingcart__amount">0</p>
                 </a>
             </div>
         </section>
     </header>
     <main>
-        <section class="sale__section">
-            <img id="js--jordan4__image" class="sale__image" src="/img/jordan4/uniBlue.webp"
-                alt="de jordan 4 retro university blue">
-            <div class="sale__div">
-                <h1 id="js--jordan4__text" class="sale__title">Jordan 4 Retro University Blue</h1>
-                <div class="sale__size__div">
-                    <p class="sale__size__title">maat:</p>
-                    <div class="size__button__div">
-                        <button class="sale__size__button active__maat">40</button>
-                        <button class="sale__size__button">41</button>
-                        <button class="sale__size__button">42</button>
-                        <button class="sale__size__button">43</button>
-                        <button class="sale__size__button">44</button>
-                        <button class="sale__size__button">45</button>
-                        <button class="sale__size__button">46</button>
-                        <button class="sale__size__button">47</button>
-                        <button class="sale__size__button">48</button>
-                        <button class="sale__size__button">49</button>
-                        <button class="sale__size__button">50</button>
-                        <button class="sale__size__button">51</button>
-                        <button class="sale__size__button">52</button>
-                    </div>
-                </div>
-                <div class="sale__button__div">
-                    <button id="sale__button1" class="sale__button active__choice"><img src="/img/jordan4/uniBlue.webp"
-                            alt=""><span>Jordan 4 Retro University Blue</span></button>
-                    <button id="sale__button2" class="sale__button"><img src="/img/jordan4/infrared.webp"
-                            alt=""><span>Jordan 4 Retro Infrared</span></button>
-                    <button id="sale__button3" class="sale__button"><img src="/img/jordan4/pineGreen.webp"
-                            alt=""><span>Jordan 4 Retro SB Pine Green</span></button>
-                    <button id="sale__button4" class="sale__button"><img src="/img/jordan4/yellowthunder.webp"
-                            alt=""><span>Jordan 4 Retro Thunder</span></button>
-                </div>
-                <div class="sale__price__div">
-                    <p class="sale__price__text">Adviesprijs</p>
-                    <del class="sale__price__old"><span id="js--sale__price__old">€550.00,-</span></del>
-                    <p class="sale__price" id="js--sale__price">€500.00,-</p>
-                </div>
-                <button id="js--shopping__button" class="sale__shopping__button">
-                    <i class="fa-solid fa-cart-shopping" id="js--shopping__icon"></i>
-                    <p id="js--shopping__text">In mijn winkelwagen</p>
-                    <i class="fa-solid fa-check shopping__button__check" id="js--shopping__check"></i>
-                </button>
+        <article class="shopping__item">
+            <div class="shopping__item__div">
+                <img src="/img/jordan4/uniBlue.webp" alt="de jordan 4 university blue" class="shopping__item__image">
             </div>
-        </section>
-        <section class="description__section">
-            <p class="description__text">
-                De Jordan 4, is een iconische sportschoen die in
-                1989 werd uitgebracht als onderdeel van de samenwerking tussen Michael Jordan en Nike. Het ontwerp van
-                de Jordan 4, gemaakt door de schoenontwerper Tinker Hatfield, werd al snel een favoriet
-                onder sneakerliefhebbers en basketbalfans over de hele wereld.
-            </p>
-            <p class="description__text">
-                De Jordan 4 is voorzien van verschillende opvallende kenmerken, waaronder de kenmerkende Jumpman-logo op
-                de tong en hiel, de zichtbare Air-unit in de hak voor optimale demping en de stevige vetersluiting voor
-                een veilige pasvorm. Het bovenwerk van de schoen is gemaakt van hoogwaardig leer en heeft vaak
-                opvallende kleurblokken en details.
-            </p>
-            <p class="description__text">
-                Naast het feit dat de Jordan 4 een stijlvolle sneaker is, is het ook een favoriet onder basketballers
-                vanwege de uitstekende ondersteuning en grip die het biedt op het veld. Door de jaren heen zijn er
-                verschillende colorways en samenwerkingen uitgebracht, waardoor de Jordan 4 een tijdloos icoon is
-                geworden in de wereld van sneakers.
-            </p>
-        </section>
+            <div>
+                <p class="shopping__item__name">Jordan 4 University Blue</p>
+                <p class="shopping__item__price">€500,-</p>
+            </div>
+        </article>
+        <article class="shopping__item">
+            <div class="shopping__item__div">
+                <img src="/img/nike sb/jarrito.webp" alt="de nike sb dunk low jarrito" class="shopping__item__image">
+            </div>
+            <div>
+                <p class="shopping__item__name">Nike SB Jarrito</p>
+                <p class="shopping__item__price">€425,-</p>
+            </div>
+        </article>
+        <article class="shopping__item">
+            <div class="shopping__item__div">
+                <img src="/img/jordan1/spiderman.webp" alt="de jordan 1 spiderman" class="shopping__item__image">
+            </div>
+            <div>
+                <p class="shopping__item__name">Jordan 1 Spiderman</p>
+                <p class="shopping__item__price">€200,-</p>
+            </div>
+        </article>
+        <article class="shopping__item">
+            <div class="shopping__item__div">
+                <img src="/img/nike sb/travis.webp" alt="de nike sb dunk low travis scott"
+                    class="shopping__item__image">
+            </div>
+            <div>
+                <p class="shopping__item__name">Nike SB Travis scott </p>
+                <p class="shopping__item__price">€1600,-</p>
+            </div>
+        </article>
+        <article class="shopping__price"></article>
     </main>
     <footer>
         <section class="footer__section footer__section1">
@@ -164,5 +136,3 @@
         </section>
     </footer>
 </body>
-
-</html>
