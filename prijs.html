@@ -11,10 +11,11 @@
         rel="stylesheet">
     <link rel="icon" href="/img/logo.webp">
     <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="css/prijs.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <script src="https://kit.fontawesome.com/6c294d23a1.js" crossorigin="anonymous"></script>
     <script src="js/header.js" defer></script>
-    <script src="js/filter.js" defer></script>
+    <script src="js/prijs.js" defer></script>
     <title>Sneaker Vault</title>
 </head>
 
@@ -36,71 +37,20 @@
     </header>
     <main>
         <section class="filter__section">
-            <h2>
-                Merk:
-            </h2>
-            <div class="checkbox__div" onclick="filterCheckMerk()">
-                <input type="checkbox" id="nike" name="nike" checked>
-                <label for="nike">Nike</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckMerk()">
-                <input type="checkbox" id="jordans" name="jordans" checked>
-                <label for="jordans">Jordan</label>
-            </div>
-            <h2>
-                Soort:
-            </h2>
-            <div class="checkbox__div" onclick="filterCheckSoort()">
-                <input type="checkbox" id="sb" name="sb" checked>
-                <label for="sb">Nike SB</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckSoort()">
-                <input type="checkbox" id="1" name="1" checked>
-                <label for="1">Jordan 1</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckSoort()">
-                <input type="checkbox" id="4" name="4" checked>
-                <label for="4">Jordan 4</label>
-            </div>
-            <h2>
-                Kleur:
-            </h2>
-            <div class="checkbox__div" onclick="filterCheckColor()">
-                <input type="checkbox" id="rood" name="rood" checked>
-                <label for="rood">Rood</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckColor()">
-                <input type="checkbox" id="blauw" name="blauw" checked>
-                <label for="blauw">Blauw</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckColor()">
-                <input type="checkbox" id="groen" name="groen" checked>
-                <label for="groen">Groen</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckColor()">
-                <input type="checkbox" id="oranje" name="oranje" checked>
-                <label for="oranje">Oranje</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckColor()">
-                <input type="checkbox" id="geel" name="geel" checked>
-                <label for="geel">Geel</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckColor()">
-                <input type="checkbox" id="beige" name="beige" checked>
-                <label for="beige">Beige</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckColor()">
-                <input type="checkbox" id="bruin" name="bruin" checked>
-                <label for="bruin">Bruin</label>
-            </div>
-            <div class="checkbox__div" onclick="filterCheckColor()">
-                <input type="checkbox" id="zwart" name="zwart" checked>
-                <label for="zwart">Zwart</label>
+            <h2 class="prijs__filter" onclick="prijsFilterDrop()">Prijs filter <span id="filter__arrow">
+                <i class="fa-solid fa-chevron-right" id="right"></i>
+                <i class="fa-solid fa-chevron-down" id="down"></i>
+            </span></h2>
+            <div>
+                <p class="prijs__filter__option" id="js--all">all</p>
+                <p class="prijs__filter__option" id="js--prijs1">0/200</p>
+                <p class="prijs__filter__option" id="js--prijs2">200/500</p>
+                <p class="prijs__filter__option" id="js--prijs3">500+</p>
             </div>
         </section>
         <section class="item__section">
             <ul class="item__list">
-                <li class="item__product" data-merk="jordan" data-soort="jordan1" data-color="red">
+                <li class="item__product" data-prijs="prijs1">
                     <a href="/j1.html"><img src=""
                             alt="de jordan 1 High Zoom Air CMFT Patent Chicago" class="item__image"></a>
                     <a href="/j1.html" class="item__text"></a>
@@ -121,7 +71,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="jordan" data-soort="jordan4" data-color="yellow">
+                <li class="item__product" data-prijs="prijs2">
                     <a href="/j4.html"><img src="" alt="de Jordan 4 yellow thunder"
                             class="item__image"></a>
                     <a href="/j4.html" class="item__text"></a>
@@ -142,7 +92,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="jordan" data-soort="jordan1" data-color="yellow">
+                <li class="item__product" data-prijs="prijs1">
                     <a href="/j1.html"><img src="" alt="de jordan 1 retro high pollen"
                             class="item__image"></a>
                     <a href="/j1.html" class="item__text"></a>
@@ -163,7 +113,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="nike" data-soort="sb" data-color="red">
+                <li class="item__product" data-prijs="prijs2">
                     <a href="/sb.html"><img src="" alt="de nike sb abstract"
                             class="item__image"></a>
                     <a href="/sb.html" class="item__text"></a>
@@ -184,7 +134,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="jordan" data-soort="jordan1" data-color="red">
+                <li class="item__product" data-prijs="prijs2">
                     <a href="/j1.html"><img src="" alt="de jordan 1 retro high spiderman"
                             class="item__image"></a>
                     <a href="/j1.html" class="item__text"></a>
@@ -205,7 +155,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="nike" data-soort="sb" data-color="beige">
+                <li class="item__product" data-prijs="prijs2">
                     <a href="/sb.html"><img src="" alt="de nike sb jarrito"
                             class="item__image"></a>
                     <a href="/sb.html" class="item__text"></a>
@@ -226,7 +176,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="jordan" data-soort="jordan1" data-color="brown">
+                <li class="item__product" data-prijs="prijs2">
                     <a href="/j1.html"><img src="" alt="de jordan 1 retro high dark mocha"
                             class="item__image"></a>
                     <a href="/j1.html" class="item__text"></a>
@@ -247,7 +197,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="jordan" data-soort="jordan4" data-color="red">
+                <li class="item__product" data-prijs="prijs2">
                     <a href="/j4.html"><img src="" alt="de Jordan 4 infrared"
                             class="item__image"></a>
                     <a href="/j4.html" class="item__text"></a>
@@ -268,7 +218,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="nike" data-soort="sb" data-color="orange">
+                <li class="item__product" data-prijs="prijs2">
                     <a href="/sb.html"><img src="" alt="de nike sb orange lobster"
                             class="item__image"></a>
                     <a href="/sb.html" class="item__text"></a>
@@ -289,7 +239,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="jordan" data-soort="jordan1" data-color="green">
+                <li class="item__product" data-prijs="prijs1">
                     <a href="/j1.html"><img src="" alt="de jordan 1 retro high lucky green"
                             class="item__image"></a>
                     <a href="/j1.html" class="item__text"></a>
@@ -310,7 +260,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="nike" data-soort="sb" data-color="blue">
+                <li class="item__product" data-prijs="prijs2">
                     <a href="/sb.html"><img src="" alt="de nike sb raspberry"
                             class="item__image"></a>
                     <a href="/sb.html" class="item__text"></a>
@@ -331,7 +281,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="jordan" data-soort="jordan4" data-color="blue">
+                <li class="item__product" data-prijs="prijs3">
                     <a href="/j4.html"><img src="" alt="de Jordan 4 university blue"
                             class="item__image"></a>
                     <a href="/j4.html" class="item__text"></a>
@@ -352,7 +302,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="nike" data-soort="sb" data-color="black">
+                <li class="item__product" data-prijs="prijs3">
                     <a href="/sb.html"><img src="" alt="de nike sb travis scott"
                             class="item__image"></a>
                     <a href="/sb.html" class="item__text"></a>
@@ -373,7 +323,7 @@
                     </div>
                     <button class="item__button"><i class="fa-solid fa-cart-shopping"></i></button>
                 </li>
-                <li class="item__product" data-merk="jordan" data-soort="jordan4" data-color="green">
+                <li class="item__product" data-prijs="prijs2">
                     <a href="/j4.html"><img src="" alt="de Jordan 4 sb pine green"
                             class="item__image"></a>
                     <a href="/j4.html" class="item__text"></a>

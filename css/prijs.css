@@ -1,0 +1,21 @@
+.prijs__filter__option {
+    display: none;
+}
+
+.prijs__filter__option:hover {
+    cursor: pointer;
+}
+
+.prijs__filter{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.prijs__filter:hover {
+    cursor: pointer;
+}
+
+#down{
+    display: none;
+}

@@ -1,0 +1,128 @@
+{
+    "product0": [
+        {
+            "title": "Jordan 1 Patent Chicago",
+            "img": "/img/jordan1/patentChicago.webp",
+            "oldPrice": "180,-",
+            "price": "160,-",
+            "review": "331 reviews"
+        }
+    ],
+    "product1": [
+        {
+            "title": "Jordan 4 Yellow Thunder",
+            "img": "/img/jordan4/yellowthunder.webp",
+            "oldPrice": "300,-",
+            "price": "250,-",
+            "review": "152 reviews"
+        }
+    ],
+    "product2": [
+        {
+            "title": "Jordan 1 Pollen",
+            "img": "/img/jordan1/pollen.webp",
+            "oldPrice": "180,-",
+            "price": "140,-",
+            "review": "150 reviews"
+        }
+    ],
+    "product3": [
+        {
+            "title": "Nike SB Abstract",
+            "img": "/img/nike sb/abstract.webp",
+            "oldPrice": "360,-",
+            "price": "400,-",
+            "review": "294 reviews"
+        }
+    ],
+    "product4": [
+        {
+            "title": "Jordan 1 Spiderman",
+            "img": "/img/jordan1/spiderman.webp",
+            "oldPrice": "220,-",
+            "price": "200,-",
+            "review": "492 reviews"
+        }
+    ],
+    "product5": [
+        {
+            "title": "Nike SB Jarrito",
+            "img": "/img/nike sb/jarrito.webp",
+            "oldPrice": "475,-",
+            "price": "425,-",
+            "review": "192 reviews"
+        }
+    ],
+    "product6": [
+        {
+            "title": "Jordan 1 Dark Mocha",
+            "img": "/img/jordan1/DarkMocha.webp",
+            "oldPrice": "500,-",
+            "price": "450,-",
+            "review": "520 reviews"
+        }
+    ],
+    "product7": [
+        {
+            "title": "Jordan 4 Infrared",
+            "img": "/img/jordan4/infrared.webp",
+            "oldPrice": "300,-",
+            "price": "250,-",
+            "review": "723 reviews"
+        }
+    ],
+    "product8": [
+        {
+            "title": "Nike SB Orange Lobster",
+            "img": "/img/nike sb/product-orange.webp",
+            "oldPrice": "350,-",
+            "price": "300,-",
+            "review": "482 reviews"
+        }
+    ],
+    "product9": [
+        {
+            "title": "Jordan 1 Lucky Green",
+            "img": "/img/jordan1/luckyGreen.webp",
+            "oldPrice": "190,-",
+            "price": "160,-",
+            "review": "458 reviews"
+        }
+    ],
+    "product10": [
+        {
+            "title": "Nike SB Raspberry",
+            "img": "/img/nike sb/raspberry.webp",
+            "oldPrice": "300,-",
+            "price": "275,-",
+            "review": "452 reviews"
+        }
+    ],
+    "product11": [
+        {
+            "title": "Jordan 4 University Blue",
+            "img": "/img/jordan4/uniBlue.webp",
+            "oldPrice": "550,-",
+            "price": "500,-",
+            "review": "812 reviews"
+        }
+    ],
+    "product12": [
+        {
+            "title": "Nike SB Travis scott",
+            "img": "/img/nike sb/travis.webp",
+            "oldPrice": "1800,-",
+            "price": "1600,-",
+            "review": "1283 reviews"
+        }
+    ],
+    "product13": [
+        {
+            "title": "Jordan 4 SB Pine Green",
+            "img": "/img/jordan4/pineGreen.webp",
+            "oldPrice": "450,-",
+            "price": "375,-",
+            "review": "385 reviews"
+        }
+    ]
+}
