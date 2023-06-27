@@ -20,7 +20,8 @@ for (let i = 0; i < arrowButtons.length; i++) {
             reviews[2].style.display = "flex";
             reviews[3].style.display = "none";
             reviews[4].style.display = "none";
-            reviews[5].style.display = "none";
+            reviews[5].style.display
+             = "none";
             modus = "one-two-three";
         }
     }

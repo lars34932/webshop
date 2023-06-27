@@ -1,5 +1,5 @@
 //json
-fetch('/js/products.json')
+fetch('js/products.json')
     .then(response => response.json())
     .then(data => {
         const filterTitle = document.getElementsByClassName("item__text");
