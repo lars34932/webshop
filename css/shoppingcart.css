@@ -84,6 +84,37 @@ main {
     align-items: center;
 }
 
+.checkout{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    gap: 2rem;
+}
+
+.totaal__prijs{
+    font-size: 3rem;
+}
+
+.checkout__button{
+    width: 25rem;
+    height: 5rem;
+    background: var(--cb-green);
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    box-shadow: inset 0 -2px 0 0 var(--cb-dark-green);
+    transition: 0.1s all;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.checkout__button:hover{
+    background: var(--cb-dark-green);
+    box-shadow: inset 0 -2px 0 0 var(--cb-darker-green);
+}
+
 @media screen and (max-width: 51rem) {
     main{
         padding: 21% 11% 0 11%;
